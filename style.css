@@ -4,18 +4,8 @@
 	box-sizing: border-box;
 }
 
-body {
-	background-color: aquamarine;
-}
-
 .form {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	text-align: center;
-	background-color: rgb(190, 190, 164);
-	padding: 100px 15px;
-
+	background-color: blueviolet;
 }
 
 .form button {
@@ -30,18 +20,35 @@ body {
 	background-color: salmon;
 	cursor: pointer;
 	margin-top: 30px;
+	transition: 0.15s;
 }
 
-input {
+textarea {
+	display: block;
 	width: 600px;
 	height: 250px;
 	margin: 0 auto;
 	padding: 17px 20px;
-	background-color: #e5e5e5;
-	border-radius: 10px;
-	border: none;
-	font-family: arial;
-	font-size: 18px;
 	color: burlywood;
+	background-color: #e5e5e5;
+	border: none;
+	border-radius: 10px;
+	font-size: 18px;
+	font-family: arial;
 	outline: none;
+	transition: 0.15s;
+}
+
+@media (max-width: 670px) {
+	textarea {
+		width: 400px;
+		height: 150px;
+	}
+}
+
+@media (max-width: 470px) {
+	textarea {
+		width: 250px;
+		height: 100px;
+	}
 }
